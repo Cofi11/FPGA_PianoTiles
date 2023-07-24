@@ -1,0 +1,100 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 232 208)
+	(text "backgroundEnables" (rect 5 0 145 20)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 169 31 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X[10..0]" (rect 0 0 54 20)(font "Intel Clear" (font_size 8)))
+		(text "X[10..0]" (rect 21 27 75 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "DRAW0" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW0" (rect 142 27 195 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "DRAW1" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW1" (rect 142 43 195 63)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "DRAW2" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW2" (rect 142 59 195 79)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 64)(pt 200 64))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "DRAW3" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW3" (rect 142 75 195 95)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "DRAW4" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW4" (rect 142 91 195 111)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 96)(pt 200 96))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "DRAW5" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW5" (rect 142 107 195 127)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 112)(pt 200 112))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "DRAW6" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW6" (rect 142 123 195 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 128)(pt 200 128))
+	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "DRAW7" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW7" (rect 142 139 195 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 144)(pt 200 144))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "DRAW_BORDER" (rect 0 0 110 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAW_BORDER" (rect 85 155 195 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 160)(pt 200 160))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 176))
+	)
+)

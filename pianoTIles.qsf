@@ -1,0 +1,177 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+# Date created = 11:46:49  May 20, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pianoTIles_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:46:49  MAY 20, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_M9 -to clk
+set_location_assignment PIN_H8 -to HSYNC
+set_location_assignment PIN_G8 -to VSYNC
+set_location_assignment PIN_A5 -to RGB[11]
+set_location_assignment PIN_C9 -to RGB[10]
+set_location_assignment PIN_B10 -to RGB[9]
+set_location_assignment PIN_A9 -to RGB[8]
+set_location_assignment PIN_J8 -to RGB[7]
+set_location_assignment PIN_J7 -to RGB[6]
+set_location_assignment PIN_K7 -to RGB[5]
+set_location_assignment PIN_L7 -to RGB[4]
+set_location_assignment PIN_A7 -to RGB[3]
+set_location_assignment PIN_A8 -to RGB[2]
+set_location_assignment PIN_B7 -to RGB[1]
+set_location_assignment PIN_B6 -to RGB[0]
+set_location_assignment PIN_U13 -to SW0
+set_location_assignment PIN_M22 -to buzzerIO
+set_location_assignment PIN_D17 -to buzzerVCC
+set_location_assignment PIN_U7 -to KEY0
+set_location_assignment PIN_AA2 -to led[0]
+set_location_assignment PIN_AA1 -to led[1]
+set_location_assignment PIN_W2 -to led[2]
+set_location_assignment PIN_Y3 -to led[3]
+set_location_assignment PIN_N2 -to led[4]
+set_location_assignment PIN_N1 -to led[5]
+set_location_assignment PIN_U2 -to led[6]
+set_location_assignment PIN_U1 -to led[7]
+set_location_assignment PIN_L2 -to led[8]
+set_location_assignment PIN_L1 -to led[9]
+set_location_assignment PIN_D3 -to PS2_CLK
+set_location_assignment PIN_G2 -to PS2_DATA
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_W9 -to KEY1
+set_location_assignment PIN_M7 -to KEY2
+set_location_assignment PIN_U21 -to seg0_[0]
+set_location_assignment PIN_V21 -to seg0_[1]
+set_location_assignment PIN_W22 -to seg0_[2]
+set_location_assignment PIN_W21 -to seg0_[3]
+set_location_assignment PIN_Y22 -to seg0_[4]
+set_location_assignment PIN_Y21 -to seg0_[5]
+set_location_assignment PIN_AA22 -to seg0_[6]
+set_location_assignment PIN_AA20 -to seg1_[0]
+set_location_assignment PIN_AB20 -to seg1_[1]
+set_location_assignment PIN_AA19 -to seg1_[2]
+set_location_assignment PIN_AA18 -to seg1_[3]
+set_location_assignment PIN_AB18 -to seg1_[4]
+set_location_assignment PIN_AA17 -to seg1_[5]
+set_location_assignment PIN_U22 -to seg1_[6]
+set_location_assignment PIN_Y19 -to SEG2_[0]
+set_location_assignment PIN_AB17 -to SEG2_[1]
+set_location_assignment PIN_AA10 -to SEG2_[2]
+set_location_assignment PIN_Y14 -to SEG2_[3]
+set_location_assignment PIN_V14 -to SEG2_[4]
+set_location_assignment PIN_AB22 -to SEG2_[5]
+set_location_assignment PIN_AB21 -to SEG2_[6]
+set_location_assignment PIN_Y16 -to SEG3_[0]
+set_location_assignment PIN_W16 -to SEG3_[1]
+set_location_assignment PIN_Y17 -to SEG3_[2]
+set_location_assignment PIN_V16 -to SEG3_[3]
+set_location_assignment PIN_U17 -to SEG3_[4]
+set_location_assignment PIN_V18 -to SEG3_[5]
+set_location_assignment PIN_V19 -to SEG3_[6]
+set_location_assignment PIN_U20 -to SEG4[0]
+set_location_assignment PIN_Y20 -to SEG4[1]
+set_location_assignment PIN_V20 -to SEG4[2]
+set_location_assignment PIN_U16 -to SEG4[3]
+set_location_assignment PIN_U15 -to SEG4[4]
+set_location_assignment PIN_Y15 -to SEG4[5]
+set_location_assignment PIN_P9 -to SEG4[6]
+set_location_assignment PIN_N9 -to SEG5[0]
+set_location_assignment PIN_M8 -to SEG5[1]
+set_location_assignment PIN_T14 -to SEG5[2]
+set_location_assignment PIN_P14 -to SEG5[3]
+set_location_assignment PIN_C1 -to SEG5[4]
+set_location_assignment PIN_C2 -to SEG5[5]
+set_location_assignment PIN_W19 -to SEG5[6]
+set_global_assignment -name BDF_FILE pause.bdf
+set_global_assignment -name BDF_FILE realniTajmer.bdf
+set_global_assignment -name BDF_FILE pCD4.bdf
+set_global_assignment -name BDF_FILE ledovanje.bdf
+set_global_assignment -name BDF_FILE frekvencije.bdf
+set_global_assignment -name BDF_FILE RNG.bdf
+set_global_assignment -name BDF_FILE Tastatura.bdf
+set_global_assignment -name BDF_FILE P.bdf
+set_global_assignment -name BDF_FILE VGAController.bdf
+set_global_assignment -name VHDL_FILE seven_segment_digit_interface.vhd
+set_global_assignment -name VHDL_FILE REGX.vhd
+set_global_assignment -name VHDL_FILE REG1.vhd
+set_global_assignment -name VHDL_FILE MP4X.vhd
+set_global_assignment -name VHDL_FILE MP2X.vhd
+set_global_assignment -name VHDL_FILE CONSTX.vhd
+set_global_assignment -name VHDL_FILE CMPX.vhd
+set_global_assignment -name VHDL_FILE Binary2BCD.vhd
+set_global_assignment -name VHDL_FILE ALUX.vhd
+set_global_assignment -name BDF_FILE pCD8.bdf
+set_global_assignment -name BDF_FILE DC16.bdf
+set_global_assignment -name BDF_FILE DC8.bdf
+set_global_assignment -name BDF_FILE CD16.bdf
+set_global_assignment -name BDF_FILE CD8.bdf
+set_global_assignment -name BDF_FILE UA.bdf
+set_global_assignment -name BDF_FILE RisingEdge.bdf
+set_global_assignment -name BDF_FILE testTastatura.bdf
+set_global_assignment -name BDF_FILE belgijska.bdf
+set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name BDF_FILE backgroundEnables.bdf
+set_global_assignment -name BDF_FILE MX12_3.bdf
+set_global_assignment -name BDF_FILE backgroundLayer.bdf
+set_global_assignment -name BDF_FILE pravougaonik.bdf
+set_global_assignment -name BDF_FILE pravougaonik4_linija.bdf
+set_global_assignment -name BDF_FILE tajmer.bdf
+set_global_assignment -name BDF_FILE spajalica.bdf
+set_global_assignment -name BDF_FILE zujalica.bdf
+set_global_assignment -name BDF_FILE pravougaonik32_sve.bdf
+set_global_assignment -name BDF_FILE dveLajne.bdf
+set_location_assignment PIN_M6 -to KEY3
+set_global_assignment -name BDF_FILE game_speed.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
